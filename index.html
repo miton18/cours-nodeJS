@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>NodeJS</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A nodeJS Course ">
+		<meta name="author" content="Rémi Collignon">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -40,48 +40,87 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+				<section data-background="node-bg.png">
 
+				</section>
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<img data-src="node.png" style="border: none;background: none;box-shadow: none">
+					<h5>by <a href="https://remi.rcdinfo.fr">Rémi Collignon</a> for ClubElec <3</h5>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Interets</h2>
+						<ul>
+							<li>Coder en <span class="fragment highlight-red visible">Javascript</span> coté serveur.</li>
+							<li>Avoir un serveur web entièrement configurable avec <span class="fragment highlight-blue visible">1 langage</span></li>
+							<li>Un serveur performant</li>
+						</ul>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h2>Inconvénients</h2>
+						<ul>
+							<li>Gestion des dépendances bordelique</li>
+							<li>Scalabilitée = 0</li>
+						</ul>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
+						<h2>Comment on l'installe</h2>
+						<p>En ligne de commande !!!</p>
 						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						<a href="https://nodejs.org/en/download/stable/"> Par içi pour les utilisateurs Windows & Mac
 						</a>
+                        <p>Pour les linuxiens : </p>
+                        <pre>
+                            <code class="hljs bash" data-trim >
+                            $ apt-get install nodejs
+$ yum install nodejs
+$ yaourt nodejs
+					        </code>
+                        </pre>
+                        <p class="fragment current-visible">N'oublier pas d'ajouter le chemin de Node dans votre variable d'environement PATH</p>
 					</section>
+                    <section>
+                        <p>Petite vérification pour voir si tout marche : </p>
+                        <pre>
+                            <code class="hljs bash" data-trim contenteditable>
+                            $ node -v
+v5.8.0
+					        </code>
+                        </pre>
+                    </section>
 				</section>
+                <section>
+                    <section>
+                        <h2>Notre premier Serveur!</h2>
+                        <p>notre saint fichier...</p>
+                        <pre>
+                            <code class="hljs bash" data-trim contenteditable>
+                            $ mkdir MyProjet && cd MyProjet
+$ npm init
+name: MyProject
+version: 0.0.1
+description: My NodeJS helloWorld
+entry point: main.js
+test command:
+git repository:
+keywords:
+author: miton
+license: MIT
+Is it ok? yes
+
+$ ls
+ package.json
+
+					        </code>
+                        </pre>
+                    </section>
+                    
+                </section>
 
 				<section>
-					<h2>Slides</h2>
+					<h2>Le package.json</h2>
 					<p>
 						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
 					</p>
