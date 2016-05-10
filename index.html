@@ -58,11 +58,13 @@
                         <img src="not-expert.jpg">
                     </section>
                     <section>
-                        <p>Un serveur web non bloquant</p>
-                        <p>Basé sur des Events</p>
-                        <p>Codé en Javascript</p>
-                        <p>Cross-platform</p>
                         <img src="comp.png">
+                        <aside class="notes">
+                            <p>Un serveur web non bloquant</p>
+                            <p>Basé sur des Events</p>
+                            <p>Codé en Javascript</p>
+                            <p>Cross-platform</p>
+                        </aside>
                     </section>
                     <section>
                         <h2>Exemple de projet</h2>
@@ -81,7 +83,7 @@
                     <section>
                         <h2>Interêts</h2>
                         <ul>
-                            <li>Coder en <span class="fragment highlight-red visible">Javascript</span> coté serveur.</li>
+                            <li>Coder en <span class="fragment highlight-red visible">Javascript</span> côté serveur</li>
                             <li>Avoir un serveur web entièrement configurable avec <span class="fragment highlight-blue visible">1 langage</span></li>
                             <li>Un serveur web performant</li>
                         </ul>
@@ -258,9 +260,9 @@ $ npm install --save express
                         </p>
                         <ul>
                             <p>+200 000 packets pour:</p>
-                            <li>Builder vos app (Grunt, gulp, jade, sass)</li>
+                            <li>Builder vos app (Grunt, Gulp, Jade(Pug), Sass)</li>
                             <li>Vous faciliter la vie (Express, Americano, Bower, Forever)</li>
-                            <li>Sortir du code optimisé (min-css, uglifyjs, concat)</li>
+                            <li>Sortir du code optimisé (Min-css, UglifyJs, Concat)</li>
                         </ul>
                     </section>
                 </section>
@@ -332,7 +334,6 @@ app.get('/messages', function(req, res){
         state: "Liste des messages!"
     })
 });
-
 app.post('/messages', function(req, res){
 
     res.json({
